@@ -3,7 +3,6 @@ import SearchTable from '../index';
 import AddButton from '../../AddButton';
 import OperationMenu, { ActionItem } from '../../OperationMenu';
 import { getId } from '../../../utils';
-import { use } from 'dumi';
 
 const originData = [
   {

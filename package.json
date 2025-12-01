@@ -164,9 +164,6 @@
   "engines": {
     "node": ">=18"
   },
-  "publishConfig": {
-    "registry": "https://npm.cestc.cn/"
-  },
   "authors": [
     "liangchaofei",
     "jiangjunjie"
