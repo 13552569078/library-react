@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run docs:build",
   "outputDirectory": "dist-docs",
-  "installCommand": "npm install"
+  "installCommand": "npm install --legacy-peer-deps"
 }
