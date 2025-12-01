@@ -2,5 +2,5 @@
   "buildCommand": "npm run docs:build",
   "outputDirectory": "dist-docs",
   "installCommand": "npm install",
-  "framework": "other"
+  "nodeVersion": "18.x"
 }
