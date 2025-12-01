@@ -1,0 +1,9 @@
+.aa-select-with-refresh {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  .aa-refresh-button {
+    flex-shrink: 0;
+  }
+}

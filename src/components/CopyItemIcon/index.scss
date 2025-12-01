@@ -1,0 +1,16 @@
+.aa-copy-item {
+  flex-shrink: 0;
+  .icon-copy {
+    margin-left: 4px;
+    flex-shrink: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color-text-4);
+    &:hover {
+      color: rgb(var(--primary-5));
+    }
+    &:active {
+      color: rgb(var(--primary-6));
+    }
+  }
+}

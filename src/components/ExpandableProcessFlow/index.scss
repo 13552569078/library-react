@@ -1,0 +1,59 @@
+.aa-expandable-process-flow {
+  background-color: white;
+  .flow-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    .header-left {
+      flex: 1 1;
+      padding-right: 24px;
+      .title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgb(17, 25, 40);
+      }
+      .desc {
+        font-size: 14px;
+        color: #334155;
+        line-height: 1.625;
+      }
+    }
+    .header-right {
+      flex-shrink: 0;
+      .expand-icon {
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 1.625;
+        transition-duration: .2s;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .flow-content-wrapper {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &.expand {
+      max-height: 384px;
+      opacity: 1;
+    }
+    &.not-expand {
+      max-height: 0;
+      opacity: 0;
+    }
+    .flow-content {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.aa-inline-input-editor {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  .text-content {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    .text-value {
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .edit-icon {
+      margin-left: 4px;
+      flex-shrink: 0;
+      cursor: pointer;
+      font-size: 16px;
+      color: rgb(var(--primary-4));
+      &:hover {
+        color: rgb(var(--primary-5));
+      }
+      &:active {
+        color: rgb(var(--primary-7));
+      }
+    }
+  }
+}

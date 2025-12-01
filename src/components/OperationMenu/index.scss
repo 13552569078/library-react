@@ -1,0 +1,21 @@
+.aa-operation-menu {
+  display: flex;
+  gap: 16px;
+  .has-more {
+    .down-icon {
+      margin-left: 4px;
+    }
+  }
+  .arco-dropdown-popup-visible.has-more {
+    color: rgb(var(--primary-7));
+  }
+
+  .arco-dropdown-popup-visible .arco-icon.arco-icon-down {
+    transform: rotate(180deg);
+    transition: transform 0.1s;
+  }
+
+  .arco-icon.arco-icon-down {
+    transition: transform 0.1s;
+  }
+}

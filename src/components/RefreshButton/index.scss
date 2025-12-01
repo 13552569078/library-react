@@ -1,0 +1,13 @@
+.aa-refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > .arco-btn-disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loading {
+    animation: rotate-360 1.5s linear infinite;
+  }
+}

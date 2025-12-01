@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["**/*", ".dumirc.ts", ".dumi", "docs", "types"],
+  "exclude": ["examples/*", "dist", "node_modules"]
+}

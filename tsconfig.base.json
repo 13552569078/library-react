@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["ES2015", "es2018", "es6", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "ai-arco-material": [".src"],
+    }
+  }
+}

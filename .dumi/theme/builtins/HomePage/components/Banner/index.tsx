@@ -1,0 +1,48 @@
+import React from 'react';
+// @ts-ignore
+import { Link, useIntl } from 'dumi';
+
+import styles from './index.module.less';
+
+export const Banner: React.FC = () => {
+  const intl = useIntl();
+
+  return (
+    <div className={styles.bannerContainer}>
+      <img
+        draggable={false}
+        className={styles.bgImg}
+        src="https://mdn.alipayobjects.com/huamei_mutawc/afts/img/A*664qTJ8PpR8AAAAAAAAAAAAADlrGAQ/original"
+        alt="banner"
+      />
+      <div className={styles.wrap}>
+        <img
+          draggable={false}
+          className={styles.titleImg}
+          src="/ai-arco-material/logo-horizontal.svg"
+          alt="title"
+        />
+        {/* <div className={styles.slogan}>
+          {intl.formatMessage({ id: 'app.docs.site.index.banner.slogan' })}
+        </div> */}
+        <div className={styles.btn}>
+          <Link to={`/guide/ai-arco-material${intl.locale === 'zh-CN' ? '-cn' : ''}`}>
+            {intl.formatMessage({
+              id: 'app.docs.site.index.banner.button-text',
+            })}
+          </Link>
+          <a
+            href="https://code.cestc.cn/ai-fe/library/ai-arco-material"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            Gitlab
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;

@@ -1,0 +1,107 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <!-- 发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="95" fill="url(#primaryGradient)" filter="url(#shadow)"/>
+  
+  <!-- AI 符号 - 神经网络节点 -->
+  <g transform="translate(40, 40)">
+    <!-- 连接线 -->
+    <path d="M20 30 L60 20 L100 30 M20 50 L60 40 L100 50 M20 70 L60 60 L100 70" 
+          stroke="url(#aiGradient)" stroke-width="2" opacity="0.6"/>
+    <path d="M20 30 L20 70 M60 20 L60 60 M100 30 L100 70" 
+          stroke="url(#aiGradient)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- 节点 -->
+    <circle cx="20" cy="30" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+    <circle cx="20" cy="50" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+    <circle cx="20" cy="70" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+    
+    <circle cx="60" cy="20" r="5" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <circle cx="60" cy="40" r="5" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <circle cx="60" cy="60" r="5" fill="url(#accentGradient)" filter="url(#glow)"/>
+    
+    <circle cx="100" cy="30" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+    <circle cx="100" cy="50" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+    <circle cx="100" cy="70" r="4" fill="url(#aiGradient)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Arco 设计元素 - 弧形 -->
+  <g transform="translate(100, 100)">
+    <!-- 外层弧形 -->
+    <path d="M -40 0 A 40 40 0 0 1 40 0" 
+          stroke="white" stroke-width="3" fill="none" opacity="0.9"/>
+    
+    <!-- 中层弧形 -->
+    <path d="M -30 0 A 30 30 0 0 1 30 0" 
+          stroke="url(#accentGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+    
+    <!-- 内层弧形 -->
+    <path d="M -20 0 A 20 20 0 0 1 20 0" 
+          stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- Material 设计元素 - 几何图形 -->
+  <g transform="translate(100, 140)">
+    <!-- 菱形 -->
+    <polygon points="0,-8 8,0 0,8 -8,0" fill="white" opacity="0.9" filter="url(#glow)"/>
+    
+    <!-- 小圆点 -->
+    <circle cx="-15" cy="0" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="15" cy="0" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="0" cy="-15" r="2" fill="white" opacity="0.8"/>
+    <circle cx="0" cy="15" r="2" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- 装饰性元素 -->
+  <g opacity="0.3">
+    <!-- 左上角装饰 -->
+    <circle cx="30" cy="30" r="2" fill="white"/>
+    <circle cx="40" cy="25" r="1.5" fill="url(#accentGradient)"/>
+    
+    <!-- 右上角装饰 -->
+    <circle cx="170" cy="30" r="2" fill="white"/>
+    <circle cx="160" cy="25" r="1.5" fill="url(#accentGradient)"/>
+    
+    <!-- 左下角装饰 -->
+    <circle cx="30" cy="170" r="2" fill="white"/>
+    <circle cx="40" cy="175" r="1.5" fill="url(#accentGradient)"/>
+    
+    <!-- 右下角装饰 -->
+    <circle cx="170" cy="170" r="2" fill="white"/>
+    <circle cx="160" cy="175" r="1.5" fill="url(#accentGradient)"/>
+  </g>
+  
+  <!-- 中心高光 -->
+  <circle cx="100" cy="100" r="3" fill="white" opacity="0.8" filter="url(#glow)"/>
+</svg>

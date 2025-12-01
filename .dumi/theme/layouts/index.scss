@@ -1,0 +1,10 @@
+.icons-page {
+  div[class*='mainMenu'] {
+    display: none;
+  }
+}
+div:has(.nav-search-wrapper) {
+  > button:not([class*='ant-btn']) {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+.aa-user-info-page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .info-wrapper {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 672px;
+    .info-title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+    }
+    .info-section {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      padding: 20px;
+    }
+    .user-info {
+      .section-wrapper {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .section-info {
+          display: flex;
+          align-items: flex-start;
+          .ai-avatar {
+            color: rgb(var(--primary-6));
+            background-color: rgb(var(--primary-1));
+          }
+          .user {
+            margin-left: 20px;
+            .name {
+              margin-bottom: 8px;
+              font-size: 20px;
+              font-weight: 700;
+            }
+            .account {
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+            }
+            .phone, .time {
+              margin-bottom: 8px;
+              font-size: 16px;
+              color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+              .phone-label, .time-label {
+                display: inline-block;
+                width: 64px;
+                font-weight: 500;
+              }
+              .phone-value, .time-value {
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .password-info {
+      .password-action {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .action-title {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .password-value {
+        font-size: 16px;
+        .label {
+          display: inline-block;
+          width: 48px;
+        }
+        .value {
+          margin-left: 12px;
+          color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+        }
+      }
+    }
+    .department-info {
+      .info-title {
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .department, .role {
+        font-size: 16px;
+        .label {
+          display: inline-block;
+          width: 48px;
+          font-weight: 500;
+        }
+        .value {
+          margin-left: 16px;
+          color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+        }
+      }
+      .department {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

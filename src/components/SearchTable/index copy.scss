@@ -1,0 +1,96 @@
+.aa-search-table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .table-header {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-form {
+      flex: 1 1;
+      .icon-search {
+        cursor: pointer;
+      }
+    }
+    .extra-action {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  .table-content-wrapper {
+    min-height: 0;
+    flex: 1 1;
+    overflow: auto;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    .arco-table {
+      height: 100%;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 200ms;
+
+      div:has(> .arco-pagination) {
+        background-color: white;
+        z-index: 99;
+        position: sticky;
+        bottom: 0;
+      }
+    }
+
+    .col-copy {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      .copy-text {
+        min-width: 0;
+      }
+      .copy-icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .arco-table-container ~ div {
+    padding-top: 12px;
+    margin-top: 0 !important;
+  }
+
+  tr.arco-table-tr .copy-text {
+    max-width: 100%;
+  }
+
+  tr.arco-table-tr:hover .copy-text > .ellipsis-text {
+    max-width: calc(100% - 24px);
+  }
+
+  tr.arco-table-tr .copy-icon {
+    display: none;
+  }
+
+  tr.arco-table-tr:hover .copy-icon {
+    color: rgb(var(--primary-6));
+    display: block;
+  }
+
+  tr.arco-table-tr:not(:hover) .col-link > .arco-link {
+    color: var(--color-text-2);
+  }
+
+  tr.arco-table-tr .col-link > .arco-link {
+    font-weight: 500;
+  }
+
+  .arco-table-body:has(.arco-table-no-data) {
+    scrollbar-width: none;
+  }
+
+  /* 滚动条样颜色 */
+  .arco-table-body:not(:has(.arco-table-no-data)) {
+    scrollbar-width: none;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+  }
+}

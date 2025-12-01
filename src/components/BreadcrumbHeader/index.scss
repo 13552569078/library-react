@@ -1,0 +1,28 @@
+.aa-breadcrumb-header {
+  display: flex;
+  align-items: center;
+  .icon-left-arrow {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .breadcrumb-wrapper {
+    flex-shrink: 0;
+    .arco-breadcrumb {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      font-size: 20px;
+      line-height: 28px;
+      .arco-breadcrumb-item.link {
+        cursor: pointer;
+        &:hover {
+          color: #438DFB;
+        }
+        &:active {
+          color: #2563EB;
+        }
+      }
+    }
+  }
+}

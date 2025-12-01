@@ -1,0 +1,41 @@
+.aa-login-card {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  max-width: 448px;
+  padding: 16px;
+  .label-username,.label-password {
+    max-width: 120px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+  }
+  .submit-btn {
+    margin-top: 16px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: center;
+    .arco-space {
+      margin-bottom: 32px;
+    }
+    img {
+      width: 192px;
+      object-fit: contain;
+    }
+    .separator {
+      margin-left: 6px;
+      margin-right: 6px;
+      height: 24px;
+      width: 1px;
+      background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+    }
+    .product-title {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+    }
+  }
+}

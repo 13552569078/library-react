@@ -1,0 +1,38 @@
+.aa-expandable-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .expandable-toggler {
+    // flex cursor-pointer items-center pt-3 text-sm font-normal leading-[22px]
+    // text-[rgb(var(--primary-6))] hover:text-[rgb(var(--primary-5))] active:text-[rgb(var(--primary-7))]
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(var(--primary-6));
+    &:hover {
+      color: rgb(var(--primary-5));
+    }
+    &:active {
+      color: rgb(var(--primary-7));
+    }
+    .icon-up-deg180 {
+      transform: rotate(180deg);
+    }
+    .more-text {
+      margin-left: 4px;
+    }
+    &.left {
+      justify-content: start;
+    }
+    &.center {
+      justify-content: center;
+    }
+    &.right {
+      justify-content: end;
+    }
+  }
+}

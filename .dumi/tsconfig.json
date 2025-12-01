@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "../",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "dumi/theme/*": [".dumi/theme/*"]
+    }
+  },
+  "include": ["./**/*", "../site/theme/template/Content"]
+}

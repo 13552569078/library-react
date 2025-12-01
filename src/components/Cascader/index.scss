@@ -1,0 +1,109 @@
+.aa-cascader {
+  .arco-input-tag-input.arco-input-tag-input-size-default {
+    font-size: 14px;
+  }
+  .arco-input-tag-inner {
+    gap: 4px;
+  }
+  .arco-input-tag-inner:not(:has(.arco-tag.arco-tag-checked)) > .arco-input-tag-input {
+    width: 100% !important;
+  }
+  .arco-input-tag-inner > input[placeholder] {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.aa-cascader-dropdown {
+  .arco-cascader-size-default .arco-input-tag-view {
+    height: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+  }
+
+  /* 保证输入框高度始终一致 */
+  .arco-cascader-size-default .arco-input-tag-inner {
+    min-height: 30px !important;
+    height: 30px !important;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    padding: 0;
+  }
+
+  .arco-cascader-size-default .arco-input-tag-input {
+    min-height: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+  }
+
+  .arco-cascader-list-wrapper {
+    padding: 0;
+  }
+
+  .arco-cascader-list-wrapper .arco-cascader-list-empty {
+    width: 100% !important;
+  }
+
+  .arco-cascader-list-column {
+    box-sizing: border-box; /* 防止边框撑宽 */
+    border-right: 1px solid transparent; /* 默认透明边框，防止切换列时宽度抖动 */
+  }
+
+  /* 当前列后面仍有 .arco-cascader-list-column 时，画右边框 */
+  .arco-cascader-list-column:has(+ .arco-cascader-list-column) {
+    border-right: 1px solid var(--color-border-2);
+  }
+
+  .arco-cascader-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-1);
+    display: flex;
+    align-items: center;
+  }
+
+  .arco-cascader-list-item-label {
+    padding-right: 0;
+    width: calc(100% - 30px);
+  }
+
+  .arco-cascader-list-footer {
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-5);
+    border-top: 1px solid #ecedf0;
+  }
+
+  .arco-cascader-popup-inner {
+    height: unset;
+    max-height: 200px;
+  }
+}
+
+.aa-remaining-tag-popover {
+  .arco-popover-content {
+    padding: 12px 8px 8px 12px;
+    .aa-cascader-tag {
+      margin-right: 4px;
+    }
+  }
+}
+
+.aa-cascader-tag {
+  height: 24px;
+  border-radius: 2px;
+  background-color: var(--color-fill-3);
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-text-1);
+  .aa-ellipsis-popover {
+    display: flex;
+  }
+}

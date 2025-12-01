@@ -1,0 +1,83 @@
+.aa-user-dropdown-popup {
+  .arco-dropdown-menu-item {
+    min-width: 220px;
+  }
+  .arco-dropdown-menu {
+    border: none;
+    padding: 8px 0;
+  }
+}
+.aa-user-dropdown-avatar {
+  margin-left: auto;
+  display: inline-flex;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(var(--primary-4));
+  font-size: 16px;
+  color: white;
+}
+.aa-user-dropdown-menu {
+  .menu-name {
+    // flex h-[48px] items-center justify-between hover:bg-[white]
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+      background-color: white;
+    }
+    .name-left{
+      // flex items-center gap-x-[8px]
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      .name-avatar {
+        // flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[rgb(var(--primary-4))] text-[16px] text-white
+        display: flex;
+        height: 32px;
+        width: 32px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(var(--primary-4));
+        color: white;
+        font-size: 16px;
+        border-radius: 50%;
+      }
+      .name-value {
+        // text-[14px]/[20px] text-[#151B26]
+        font-size: 14px;
+        line-height: 20px;
+        color: #151B26;
+      }
+    }
+    .name-right {
+      // rounded-[4px] border-[1px] border-[#CBD5E1] px-[8px] text-[12px]/[20px] text-[#6E7B8D]
+      border-radius: 4px;
+      border: 1px solid #CBD5E1;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #6E7B8D;
+    }
+  }
+  .menu-org {
+    // flex h-[24px] items-center bg-[#E7ECF0] px-[12px] text-[14px]/[20px] text-[#151B26] hover:bg-[#E7ECF0]
+    display: flex;
+    height: 24px;
+    align-items: center;
+    background-color: #E7ECF0;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #151B26;
+    font-size: 14px;
+    line-height: 20px;
+    &:hover {
+      background-color: #E7ECF0;
+    }
+  }
+}

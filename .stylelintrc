@@ -1,0 +1,7 @@
+{
+  "extends": "@umijs/lint/dist/config/stylelint",
+  "rules": {
+    "no-empty-source": null
+  },
+  "ignoreFiles": [".dumi/**/*.less"]
+}

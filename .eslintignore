@@ -1,0 +1,11 @@
+node_modules
+coverage
+dist
+dist-docs
+lib
+es
+src/**/demo
+
+.umi-production
+.umi-test
+.umi

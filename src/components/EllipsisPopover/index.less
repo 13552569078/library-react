@@ -1,0 +1,42 @@
+.aa-ellipsis-popover {
+  .ellipsis-text.arco-link {
+    padding: 0;
+  }
+
+  .ellipsis-text {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+  }
+
+  .ellipsis-text.ellipsis-pop-span {
+    width: initial;
+    min-width: 14px;
+    max-width: calc(100% - 28px);
+  }
+
+  .ellipsis-pop-copy-icon {
+    margin-left: 4px;
+    cursor: pointer;
+    stroke-width: 3;
+    vertical-align: middle;
+    font-size: 16px;
+    color: rgb(var(--primary-6));
+  }
+
+  .ellipsis-text-span {
+    position: fixed;
+    left: -9999px;
+    top: -9999px;
+    display: inline-block;
+    user-select: none;
+  }
+
+  .typoWrap {
+    margin-bottom: 0;
+  }
+}

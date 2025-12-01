@@ -1,0 +1,32 @@
+.aa-no-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      color: var(--text-color-text-1, #0F172A);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .desc {
+      margin-top: 4px;
+      color: var(--text-color-text-4, #6E7B8D);
+      font-size: 14px;
+      line-height: 1.57143;
+    }
+    .btns {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+}

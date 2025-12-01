@@ -1,0 +1,39 @@
+.aa-switcher {
+  display: flex;
+  height: 22px;
+  width: 44px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 24px;
+
+  .arco-switch-dot {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+  }
+
+  &.arco-switch-checked > .arco-switch-dot {
+    left: 24px;
+  }
+
+  &:not(.arco-switch-checked) > .arco-switch-dot {
+    left: 4px;
+  }
+
+  .arco-switch-text.switchSlideText-exit-active {
+    right: 4px;
+  }
+
+  .switchSlideText-exit-done {
+    left: 24px;
+  }
+
+  .arco-switch-text {
+    transition: right 0.1s ease;
+  }
+
+  &:not(.arco-switch-checked) > .arco-switch-text {
+    left: 24px;
+  }
+}
